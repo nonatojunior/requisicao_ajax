@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>Calculadora</h1>
+		<%= number_field_tag :primeiro_numero, nil, placeholder: 'Digite um número' %>
+		<%= select_tag :operacao, options_for_select(['+', '-', '*', '/']), { prompt: 'Selecione' } %>
+		<%= number_field_tag :segundo_numero, nil, placeholder: 'Digite um número' %>
+		<%= submit_tag 'Calcular', id: 'btn-calc' %>
+		<br>
+		<div id="resultado" />
+	</body>
+</html>
